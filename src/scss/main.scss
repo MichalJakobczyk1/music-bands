@@ -1,13 +1,30 @@
 @import "~normalize.css";
-
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/section.scss";
+@import "modules/styleReset.scss";
 
-body {
-  background: $wtf;
+.body {
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  background-color: #000;
+}
+
+.main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 5% 1fr 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "tpr taco grandson ava"
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background: $themeColor;
+}
+.footer {
+  grid-area: footer;
+  background: $themeColor;
 }

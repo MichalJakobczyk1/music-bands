@@ -1,0 +1,34 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    &--tpr {
+      grid-area: tpr;
+      background: url("../assets/img/tpr.png") center center / cover;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &--taco {
+      grid-area: taco;
+      background: url("../assets/img/taco.png") center center / cover;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &--grandson {
+      grid-area: grandson;
+      background: url("../assets/img/grandson.png") center center / cover;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &--ava {
+      grid-area: ava;
+      background: url("../assets/img/ava.png") center center / cover;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }

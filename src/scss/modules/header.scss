@@ -1,0 +1,12 @@
+.header {
+  grid-area: header;
+  background: $themeColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: appear 2s ease-in-out;
+  &__h1 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+}

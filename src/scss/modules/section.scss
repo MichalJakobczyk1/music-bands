@@ -1,28 +1,104 @@
 .section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0.5;
+  -webkit-text-stroke: 1px black;
+  &__h2 {
+    &--tpr {
+      @include h2;
+      &-animated {
+        @include animation;
+      }
+    }
+  }
   &__button {
     &--tpr {
-      background: $button;
-      width: 50px;
-      height: 50px;
+      @include button;
+      &-animated {
+        @include animationButton;
+      }
     }
+  }
+  &__title {
+    &--tpr {
+      @include title;
+      &-animated {
+        @include animationTitle;
+      }
+    }
+  }
+  &__h2 {
     &--taco {
-      background: $button;
-      width: 50px;
-      height: 50px;
+      @include h2;
+      &-animated {
+        @include animation;
+      }
     }
+  }
+  &__button {
+    &--taco {
+      @include button;
+      &-animated {
+        @include animationButton;
+      }
+    }
+  }
+  &__title {
+    &--taco {
+      @include title;
+      &-animated {
+        @include animationTitle;
+      }
+    }
+  }
+  &__h2 {
     &--grandson {
-      background: $button;
-      width: 50px;
-      height: 50px;
+      @include h2;
+      &-animated {
+        @include animation;
+      }
     }
+  }
+  &__button {
+    &--grandson {
+      @include button;
+      &-animated {
+        @include animationButton;
+      }
+    }
+  }
+  &__title {
+    &--grandson {
+      @include title;
+      &-animated {
+        @include animationTitle;
+      }
+    }
+  }
+  &__h2 {
     &--ava {
-      background: $button;
-      width: 50px;
-      height: 50px;
+      @include h2;
+      &-animated {
+        @include animation;
+      }
+    }
+  }
+  &__button {
+    &--ava {
+      @include button;
+      &-animated {
+        @include animationButton;
+      }
+    }
+  }
+  &__title {
+    &--ava {
+      @include title;
+      &-animated {
+        @include animationTitle;
+      }
     }
   }
   &--tpr {
@@ -35,7 +111,7 @@
   }
   &--taco {
     grid-area: taco;
-    background: url("../assets/img/taco.png") center center / cover;
+    background: url("../assets/img/taco.png") center top / cover;
     transition: opacity 0.5s ease-in-out;
     &:hover {
       opacity: 1;

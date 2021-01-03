@@ -13,39 +13,78 @@ const taco = document.querySelector(".section--taco");
 const grandson = document.querySelector(".section--grandson");
 const ava = document.querySelector(".section--ava");
 
-const tprH2 = document.querySelector(".section__h2--tpr");
-const tprButton = document.querySelector(".section__button--tpr");
-const tprTitle = document.querySelector(".section__title--tpr");
+const containerTpr = document.querySelector(".container--tpr");
+const containerTaco = document.querySelector(".container--taco");
+const containerGrandson = document.querySelector(".container--grandson");
+const containerAva = document.querySelector(".container--ava");
 
-const tacoH2 = document.querySelector(".section__h2--taco");
-const tacoButton = document.querySelector(".section__button--taco");
-const tacoTitle = document.querySelector(".section__title--taco");
+const h2Tpr = document.querySelector(".container__h2--tpr");
+const buttonTpr = document.querySelector(".container__button--tpr");
+const titleTpr = document.querySelector(".container__title--tpr");
 
-const grandsonH2 = document.querySelector(".section__h2--grandson");
-const grandsonButton = document.querySelector(".section__button--grandson");
-const grandsonTitle = document.querySelector(".section__title--grandson");
+const h2Taco = document.querySelector(".container__h2--taco");
+const buttonTaco = document.querySelector(".container__button--taco");
+const titleTaco = document.querySelector(".container__title--taco");
 
-const avaH2 = document.querySelector(".section__h2--ava");
-const avaButton = document.querySelector(".section__button--ava");
-const avaTitle = document.querySelector(".section__title--ava");
+const h2Grandson = document.querySelector(".container__h2--grandson");
+const buttonGrandson = document.querySelector(".container__button--grandson");
+const titleGrandson = document.querySelector(".container__title--grandson");
 
-tpr.addEventListener("mouseenter", () => {
-  tprH2.classList.add("section__h2--tpr-animated");
-  tprButton.classList.add("section__button--tpr-animated");
-  tprTitle.classList.add("section__title--tpr-animated");
+const h2Ava = document.querySelector(".container__h2--ava");
+const buttonAva = document.querySelector(".container__button--ava");
+const titleAva = document.querySelector(".container__title--ava");
+
+// function renderImg() {
+//   const img = document.createElement("img");
+//   img.src = "../assets/img/play.svg";
+//   img.classList.add("container__image");
+//   buttonTpr.appendChild(img);
+// };
+
+tpr.addEventListener("mouseenter",() => {
+  // const img = document.createElement("img");
+  // img.src = "play.svg";
+  // img.classList.add("container__image");
+  // buttonTpr.appendChild(img);
+  h2Tpr.innerHTML = "The Pretty Reckless";
+  titleTpr.innerHTML = "Going To Hell";
+  containerTpr.classList.add("container-animated");
+  containerTpr.classList.remove("container-deanimated");
 });
-taco.addEventListener("mouseenter", () => {
-  tacoH2.classList.add("section__h2--taco-animated");
-  tacoButton.classList.add("section__button--taco-animated");
-  tacoTitle.classList.add("section__title--taco-animated");
+tpr.addEventListener("mouseleave",() => {
+  // const parent = document.getElementById("container--tpr");
+  // const child = document.getElementById("button--tpr");
+  // parent.removeChild(child);
+  containerTpr.classList.remove("container-animated");
+  containerTpr.classList.add("container-deanimated");
 });
-grandson.addEventListener("mouseenter", () => {
-  grandsonH2.classList.add("section__h2--grandson-animated");
-  grandsonButton.classList.add("section__button--grandson-animated");
-  grandsonTitle.classList.add("section__title--grandson-animated");
+taco.addEventListener("mouseenter",() => {
+  h2Taco.innerHTML = "Taco Hemingway";
+  titleTaco.innerHTML = "Luxembourg";
+  containerTaco.classList.add("container-animated");
+  containerTaco.classList.remove("container-deanimated");
 });
-ava.addEventListener("mouseenter", () => {
-  avaH2.classList.add("section__h2--ava-animated");
-  avaButton.classList.add("section__button--ava-animated");
-  avaTitle.classList.add("section__title--ava-animated");
+taco.addEventListener("mouseleave",() => {
+  containerTaco.classList.remove("container-animated");
+  containerTaco.classList.add("container-deanimated");
+});
+grandson.addEventListener("mouseenter",() => {
+  h2Grandson.innerHTML = "Grandson";
+  titleGrandson.innerHTML = "WWIII";
+  containerGrandson.classList.add("container-animated");
+  containerGrandson.classList.remove("container-deanimated");
+});
+grandson.addEventListener("mouseleave",() => {
+  containerGrandson.classList.remove("container-animated");
+  containerGrandson.classList.add("container-deanimated");
+});
+ava.addEventListener("mouseenter",() => {
+  h2Ava.innerHTML = "Ava Max";
+  titleAva.innerHTML = "Who's Laughing Now";
+  containerAva.classList.add("container-animated");
+  containerAva.classList.remove("container-deanimated");
+});
+ava.addEventListener("mouseleave",() => {
+  containerAva.classList.remove("container-animated");
+  containerAva.classList.add("container-deanimated");
 });

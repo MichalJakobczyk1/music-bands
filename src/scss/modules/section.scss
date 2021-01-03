@@ -8,12 +8,18 @@
     &:hover {
       opacity: 1;
     }
+    &:hover > .container--tpr {
+      opacity: 1;
+    }
   }
   &--taco {
     grid-area: taco;
     background: url("../assets/img/taco.png") center top / cover;
     transition: opacity 1s ease-in-out;
     &:hover {
+      opacity: 1;
+    }
+    &:hover > .container--taco {
       opacity: 1;
     }
   }
@@ -24,12 +30,18 @@
     &:hover {
       opacity: 1;
     }
+    &:hover > .container--grandson {
+      opacity: 1;
+    }
   }
   &--ava {
     grid-area: ava;
     background: url("../assets/img/ava.png") center center / cover;
     transition: opacity 1s ease-in-out;
     &:hover {
+      opacity: 1;
+    }
+    &:hover > .container--ava {
       opacity: 1;
     }
   }
@@ -40,12 +52,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100%;
-  &-animated {
-    @include appear;
-  }
-  &-deanimated {
-    @include disappear;
-  }
   &__h2 {
     font-size: 48px;
   }
@@ -55,8 +61,20 @@
   &__title {
     font-size: 32px;
   }
-  // &__image {
-  //   width: 50px;
-  //   height: 50px;
-  // }
+  &--tpr {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  &--taco{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  &--grandson{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  &--ava {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
 }

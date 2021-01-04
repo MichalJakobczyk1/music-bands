@@ -1,49 +1,28 @@
 .section {
   opacity: 0.5;
   -webkit-text-stroke: 1px black;
+  transition: opacity 1s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+  &:hover > .container {
+    opacity: 1;
+  }
   &--tpr {
     grid-area: tpr;
     background: url("../assets/img/tpr.png") center center / cover;
-    transition: opacity 1s ease-in-out;
-    &:hover {
-      opacity: 1;
-    }
-    &:hover > .container--tpr {
-      opacity: 1;
-    }
   }
   &--taco {
     grid-area: taco;
     background: url("../assets/img/taco.png") center top / cover;
-    transition: opacity 1s ease-in-out;
-    &:hover {
-      opacity: 1;
-    }
-    &:hover > .container--taco {
-      opacity: 1;
-    }
   }
   &--grandson {
     grid-area: grandson;
     background: url("../assets/img/grandson.png") center center / cover;
-    transition: opacity 1s ease-in-out;
-    &:hover {
-      opacity: 1;
-    }
-    &:hover > .container--grandson {
-      opacity: 1;
-    }
   }
   &--ava {
     grid-area: ava;
     background: url("../assets/img/ava.png") center center / cover;
-    transition: opacity 1s ease-in-out;
-    &:hover {
-      opacity: 1;
-    }
-    &:hover > .container--ava {
-      opacity: 1;
-    }
   }
 }
 .container {
@@ -52,29 +31,29 @@
   justify-content: center;
   align-items: center;
   min-height: 100%;
+  transition: opacity 1s ease-in-out;
   &__h2 {
     font-size: 48px;
   }
-  &__button {
-    @include button;
+  &__button-play {
+    @include buttonPlay;
+  }
+  &__button-pause {
+    @include buttonPause;
   }
   &__title {
     font-size: 32px;
   }
   &--tpr {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
-  &--taco{
+  &--taco {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
-  &--grandson{
+  &--grandson {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
   &--ava {
     opacity: 0;
-    transition: opacity 1s ease-in-out;
   }
 }

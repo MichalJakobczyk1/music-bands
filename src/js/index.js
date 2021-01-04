@@ -8,6 +8,11 @@ import "../scss/main.scss";
 
 console.log("HELLO 🚀");
 
+window.addEventListener('load', (event) => {
+  console.log('page is fully loaded');
+  document.body.classList.remove('body--preload');
+}); 
+
 const buttonTprGoingToHell = document.querySelector(
   ".container__button--going-to-hell"
 );

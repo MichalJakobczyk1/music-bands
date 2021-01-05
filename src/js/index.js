@@ -8,10 +8,10 @@ import "../scss/main.scss";
 
 console.log("HELLO 🚀");
 
-window.addEventListener('load', (event) => {
-  console.log('page is fully loaded');
-  document.body.classList.remove('body--preload');
-}); 
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+  document.body.classList.remove("body--preload");
+});
 
 const buttonTprGoingToHell = document.querySelector(
   ".container__button--going-to-hell"
@@ -19,6 +19,10 @@ const buttonTprGoingToHell = document.querySelector(
 const audioTprGoingToHell = document.querySelector(
   ".audio__tpr--going-to-hell"
 );
+const audioTprFollowMeDown = document.querySelector(
+  ".audio__tpr--follow-me-down"
+);
+const titleTpr = document.querySelector(".container__title--tpr");
 
 const buttonTacoLuxembourg = document.querySelector(
   ".container__button--luxembourg"
@@ -35,17 +39,25 @@ const audioAvaWhosLaughingNow = document.querySelector(
   ".audio__ava--whos-laughing-now"
 );
 
-buttonTprGoingToHell.addEventListener("click", () => {
-  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
-    audioTprGoingToHell.play();
-    audioTprGoingToHell.volume = 0.1;
+const buttonRightTprGoingToHell = document.querySelector(
+  ".section__button--right-going-to-hell"
+);
 
-    buttonTprGoingToHell.classList.remove("container__button-play");
-    buttonTprGoingToHell.classList.add("container__button-pause");
-  } else {
-    audioTprGoingToHell.pause();
-    buttonTprGoingToHell.classList.add("container__button-play");
-    buttonTprGoingToHell.classList.remove("container__button-pause");
+buttonTprGoingToHell.addEventListener("click", () => {
+  if (
+    buttonTprGoingToHell.classList.contains("container__button--going-to-hell")
+  ) {
+    if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+      audioTprGoingToHell.play();
+      audioTprGoingToHell.volume = 0.1;
+
+      buttonTprGoingToHell.classList.remove("container__button-play");
+      buttonTprGoingToHell.classList.add("container__button-pause");
+    } else {
+      audioTprGoingToHell.pause();
+      buttonTprGoingToHell.classList.add("container__button-play");
+      buttonTprGoingToHell.classList.remove("container__button-pause");
+    }
   }
 });
 
@@ -90,3 +102,26 @@ buttonAvaWhosLaughingNow.addEventListener("click", () => {
     buttonAvaWhosLaughingNow.classList.remove("container__button-pause");
   }
 });
+
+buttonRightTprGoingToHell.addEventListener("click", () => {
+  if (buttonTprGoingToHell.classList.contains("container__button--going-to-hell")) {
+    titleTpr.innerHTML = "Follow Me Down";
+    buttonTprGoingToHell.classList.remove("container__button--going-to-hell");
+    buttonTprGoingToHell.classList.add("container__button--follow-me-down");
+  }
+
+  if (buttonTprGoingToHell.classList.contains("container__button--follow-me-down")) 
+  buttonTprGoingToHell.addEventListener("click", () => {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+      audioTprFollowMeDown.play();
+      audioTprFollowMeDown.volume = 0.1;
+
+      buttonTprGoingToHell.classList.remove("container__button-play");
+      buttonTprGoingToHell.classList.add("container__button-pause");
+    }
+    else {
+      audioTprFollowMeDown.pause();
+      buttonTprGoingToHell.classList.add("container__button-play");
+      buttonTprGoingToHell.classList.remove("container__button-pause");
+  }
+})});

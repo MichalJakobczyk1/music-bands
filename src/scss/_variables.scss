@@ -9,13 +9,7 @@ $themeColor: #000;
   font-size: 36px;
   opacity: 0;
 }
-@mixin buttonPlay {
+@mixin button {
   width: 50px;
   height: 50px;
-  background: url("../assets/img/play.svg");
-}
-@mixin buttonPause{
-  width: 50px;
-  height: 50px;
-  background: url("../assets/img/pause.svg") no-repeat;
 }

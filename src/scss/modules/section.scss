@@ -1,4 +1,6 @@
 .section {
+  display: flex;
+  align-items: center;
   opacity: 0.5;
   -webkit-text-stroke: 1px black;
   transition: opacity 1s ease-in-out;
@@ -6,6 +8,9 @@
     opacity: 1;
   }
   &:hover > .container {
+    opacity: 1;
+  }
+  &:hover > .section__button {
     opacity: 1;
   }
   &--tpr {
@@ -24,8 +29,20 @@
     grid-area: ava;
     background: url("../assets/img/ava.png") center center / cover;
   }
+  &__button {
+    @include button;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    &--left {
+      background: url("../assets/img/leftArrow.svg") no-repeat;
+    }
+    &--right {
+      background: url("../assets/img/rightArrow.svg") no-repeat;
+    }
+  }
 }
 .container {
+  flex-grow: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,12 +51,15 @@
   transition: opacity 1s ease-in-out;
   &__h2 {
     font-size: 48px;
+    text-align: center;
   }
   &__button-play {
-    @include buttonPlay;
+    @include button;
+    background: url("../assets/img/play.svg");
   }
   &__button-pause {
-    @include buttonPause;
+    @include button;
+    background: url("../assets/img/pause.svg") no-repeat;
   }
   &__title {
     font-size: 32px;

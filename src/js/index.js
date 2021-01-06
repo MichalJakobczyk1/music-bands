@@ -1,5 +1,5 @@
 import "../scss/main.scss";
-import {play, pause} from "./modules/play&pause";
+import {play, pause, changeContent} from "./modules/functions";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -20,12 +20,12 @@ export const audioTprFollowMeDown = document.querySelector(".audio__tpr--follow-
 export const audioTprAbsolution = document.querySelector(".audio__tpr--absolution");
 export const audioTprDearSister = document.querySelector(".audio__tpr--dear-sister");
 export const audioTprFuckedUpWorld = document.querySelector( ".audio__tpr--fucked-up-world");
-export const audioHeavenKnows = document.querySelector(".audio__tpr--heaven-knows");
+export const audioTprHeavenKnows = document.querySelector(".audio__tpr--heaven-knows");
 export const audioTprHouseOnAHill = document.querySelector(".audio__tpr--house-on-a-hill");
 export const audioTprSweetThings = document.querySelector(".audio__tpr--sweet-things");
 export const audioTprWaitingForAFriend = document.querySelector(".audio__tpr--waiting-for-a-friend");
 export const audioTprWhydYouBringAShotgunToTheParty = document.querySelector(".audio__tpr--whyd-you-bring-a-shotgun-to-the-party");
-const titleTpr = document.querySelector(".container__title--tpr");
+export const titleTpr = document.querySelector(".container__title--tpr");
 
 const buttonTacoLuxembourg = document.querySelector(
   ".container__button--luxembourg"
@@ -90,50 +90,32 @@ buttonAvaWhosLaughingNow.addEventListener("click", () => {
 
 buttonRightTprGoingToHell.addEventListener("click", () => {
   if (buttonTprGoingToHell.classList.contains("container__button--going-to-hell")) {
-    titleTpr.innerHTML = "Follow Me Down";
-    buttonTprGoingToHell.classList.remove("container__button--going-to-hell");
-    buttonTprGoingToHell.classList.add("container__button--follow-me-down");
+    changeContent("Follow Me Down","container__button--going-to-hell","container__button--follow-me-down");
   } 
   else if (buttonTprGoingToHell.classList.contains("container__button--follow-me-down")) {
-    titleTpr.innerHTML = "Absolution";
-    buttonTprGoingToHell.classList.remove("container__button--follow-me-down");
-    buttonTprGoingToHell.classList.add("container__button--absolution");
+    changeContent("Absolution","container__button--follow-me-down","container__button--absolution");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--absolution")) {
-    titleTpr.innerHTML = "Dear Sister";
-    buttonTprGoingToHell.classList.remove("container__button--absolution");
-    buttonTprGoingToHell.classList.add("container__button--dear-sister");
+    changeContent("Dear Sister","container__button--absolution","container__button--dear-sister");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--dear-sister")) {
-    titleTpr.innerHTML = "Fucked Up World";
-    buttonTprGoingToHell.classList.remove("container__button--dear-sister");
-    buttonTprGoingToHell.classList.add("container__button--fucked-up-world");
+    changeContent("Fucked Up World","container__button--dear-sister","container__button--fucked-up-world");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--fucked-up-world")) {
-    titleTpr.innerHTML = "Heaven Knows";
-    buttonTprGoingToHell.classList.remove("container__button--fucked-up-world");
-    buttonTprGoingToHell.classList.add("container__button--heaven-knows");
+    changeContent("Heaven Knows","container__button--fucked-up-world","container__button--heaven-knows");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--heaven-knows")) {
-    titleTpr.innerHTML = "House On A Hill";
-    buttonTprGoingToHell.classList.remove("container__button--heaven-knows");
-    buttonTprGoingToHell.classList.add("container__button--house-on-a-hill");
+    changeContent("House On A Hill","container__button--heaven-knows","container__button--house-on-a-hill");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--house-on-a-hill")) {
-    titleTpr.innerHTML = "Sweet Things";
-    buttonTprGoingToHell.classList.remove("container__button--house-on-a-hill");
-    buttonTprGoingToHell.classList.add("container__button--sweet-things");
+    changeContent("Sweet Things","container__button--house-on-a-hill","container__button--sweet-things");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--sweet-things")) {
-    titleTpr.innerHTML = "Waiting For A Friend";
-    buttonTprGoingToHell.classList.remove("container__button--sweet-things");
-    buttonTprGoingToHell.classList.add("container__button--waiting-for-a-friend");
+    changeContent("Waiting For A Friend","container__button--sweet-things","container__button--waiting-for-a-friend");
   }
   else if (buttonTprGoingToHell.classList.contains("container__button--waiting-for-a-friend")) {
-    titleTpr.innerHTML = "Why'd You Bring A Shotgun To The Party";
-    buttonTprGoingToHell.classList.remove("container__button--waiting-for-a-friend");
-    buttonTprGoingToHell.classList.add("container__button--whyd-you-bring-a-shotgun-to-the-party");
-  }
+    changeContent("Why'd You Bring A Shotgun To The Party","container__button--waiting-for-a-friend","container__button--whyd-you-bring-a-shotgun-to-the-party");
+  };
 });
 
 buttonTprGoingToHell.addEventListener("click", () => {
@@ -166,6 +148,54 @@ if (buttonTprGoingToHell.classList.contains("container__button--dear-sister")) {
     play(audioTprDearSister);
  } else {
   pause(audioTprDearSister);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--fucked-up-world")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprFuckedUpWorld);
+ } else {
+  pause(audioTprFuckedUpWorld);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--heaven-knows")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprHeavenKnows);
+ } else {
+  pause(audioTprHeavenKnows);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--house-on-a-hill")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprHouseOnAHill);
+ } else {
+  pause(audioTprHouseOnAHill);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--sweet-things")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprSweetThings);
+ } else {
+  pause(audioTprSweetThings);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--waiting-for-a-friend")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprWaitingForAFriend);
+ } else {
+  pause(audioTprWaitingForAFriend);
+ }
+} 
+
+if (buttonTprGoingToHell.classList.contains("container__button--whyd-you-bring-a-shotgun-to-the-party")) {
+  if (buttonTprGoingToHell.classList.contains("container__button-play")) {
+    play(audioTprWhydYouBringAShotgunToTheParty);
+ } else {
+  pause(audioTprWhydYouBringAShotgunToTheParty);
  }
 } 
 });

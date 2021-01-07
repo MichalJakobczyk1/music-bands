@@ -1,4 +1,4 @@
-import {audioTprGoingToHell,buttonTprGoingToHell,titleTpr} from "../index";
+import {audioTprGoingToHell,buttonTprGoingToHell,titleTpr} from "./thePrettyReckless";
 
 export function play (audio) {
     audio.play();
@@ -9,6 +9,7 @@ export function play (audio) {
 };
 export function pause (audio) {
     audio.pause();
+    audio.currentTime = 0;
     buttonTprGoingToHell.classList.add("container__button-play");
     buttonTprGoingToHell.classList.remove("container__button-pause");
 };

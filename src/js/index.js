@@ -21,8 +21,12 @@ tacoPlayer();
 const buttonGrandsonWwIII = document.querySelector(".container__button--wwIII");
 const audioGrandsonWwIII = document.querySelector(".audio__grandson--wwIII");
 
-const buttonAvaWhosLaughingNow = document.querySelector(".container__button--whos-laughing-now");
-const audioAvaWhosLaughingNow = document.querySelector(".audio__ava--whos-laughing-now");
+const buttonAvaWhosLaughingNow = document.querySelector(
+  ".container__button--whos-laughing-now"
+);
+const audioAvaWhosLaughingNow = document.querySelector(
+  ".audio__ava--whos-laughing-now"
+);
 
 buttonGrandsonWwIII.addEventListener("click", () => {
   if (buttonGrandsonWwIII.classList.contains("container__button-play")) {
@@ -51,4 +55,3 @@ buttonAvaWhosLaughingNow.addEventListener("click", () => {
     buttonAvaWhosLaughingNow.classList.remove("container__button-pause");
   }
 });
-

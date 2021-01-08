@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+import tacoPlayer from "./modules/taco";
 import tprPlayer from "./modules/thePrettyReckless";
 
 // uncomment the lines below to enable PWA
@@ -15,29 +16,13 @@ window.addEventListener("load", (event) => {
 });
 
 tprPlayer();
-
-const buttonTacoLuxembourg = document.querySelector(".container__button--luxembourg");
-const audioTacoLuxembourg = document.querySelector(".audio__taco--luxembourg");
+tacoPlayer();
 
 const buttonGrandsonWwIII = document.querySelector(".container__button--wwIII");
 const audioGrandsonWwIII = document.querySelector(".audio__grandson--wwIII");
 
 const buttonAvaWhosLaughingNow = document.querySelector(".container__button--whos-laughing-now");
 const audioAvaWhosLaughingNow = document.querySelector(".audio__ava--whos-laughing-now");
-
-buttonTacoLuxembourg.addEventListener("click", () => {
-  if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
-    audioTacoLuxembourg.play();
-    audioTacoLuxembourg.volume = 0.1;
-
-    buttonTacoLuxembourg.classList.remove("container__button-play");
-    buttonTacoLuxembourg.classList.add("container__button-pause");
-  } else {
-    audioTacoLuxembourg.pause();
-    buttonTacoLuxembourg.classList.add("container__button-play");
-    buttonTacoLuxembourg.classList.remove("container__button-pause");
-  }
-});
 
 buttonGrandsonWwIII.addEventListener("click", () => {
   if (buttonGrandsonWwIII.classList.contains("container__button-play")) {

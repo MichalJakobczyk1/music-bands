@@ -1,20 +1,20 @@
 import {audioTprGoingToHell,buttonTprGoingToHell,titleTpr} from "./thePrettyReckless";
 
-export function play (audio) {
+export function play (audio,button) {
     audio.play();
     audio.volume = 0.1;
 
-    buttonTprGoingToHell.classList.remove("container__button-play");
-    buttonTprGoingToHell.classList.add("container__button-pause");
+    button.classList.remove("container__button-play");
+    button.classList.add("container__button-pause");
 };
-export function pause (audio) {
+export function pause (audio,button) {
     audio.pause();
     audio.currentTime = 0;
-    buttonTprGoingToHell.classList.add("container__button-play");
-    buttonTprGoingToHell.classList.remove("container__button-pause");
+    button.classList.add("container__button-play");
+    button.classList.remove("container__button-pause");
 };
-export function changeContent (title,classRemove,classAdd) {
-    titleTpr.innerHTML = title;
-    buttonTprGoingToHell.classList.remove(classRemove);
-    buttonTprGoingToHell.classList.add(classAdd);
+export function changeContent (sectionTitle,title,button,classRemove,classAdd) {
+    sectionTitle.innerHTML = title;
+    button.classList.remove(classRemove);
+    button.classList.add(classAdd);
 };

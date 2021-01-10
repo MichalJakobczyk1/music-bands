@@ -1,9 +1,3 @@
-import {
-  audioTprGoingToHell,
-  buttonTprGoingToHell,
-  titleTpr,
-} from "./thePrettyReckless";
-
 export function play(audio, button) {
   audio.play();
   audio.volume = 0.1;

@@ -1,19 +1,37 @@
 import { play, pause, changeContent } from "./functions";
 
-export const buttonTprGoingToHell = document.querySelector(".container__button--going-to-hell");
-const buttonRightTprGoingToHell = document.querySelector(".section__button--right-going-to-hell");
-const buttonLeftTprGoingToHell = document.querySelector(".section__button--left-going-to-hell");
+export const buttonTprGoingToHell = document.querySelector(
+  ".container__button--going-to-hell"
+);
+const buttonRightTprGoingToHell = document.querySelector(
+  ".section__button--right-going-to-hell"
+);
+const buttonLeftTprGoingToHell = document.querySelector(
+  ".section__button--left-going-to-hell"
+);
 
-export const audioTprGoingToHell = document.querySelector(".audio__tpr--going-to-hell");
-const audioTprFollowMeDown = document.querySelector(".audio__tpr--follow-me-down");
+export const audioTprGoingToHell = document.querySelector(
+  ".audio__tpr--going-to-hell"
+);
+const audioTprFollowMeDown = document.querySelector(
+  ".audio__tpr--follow-me-down"
+);
 const audioTprAbsolution = document.querySelector(".audio__tpr--absolution");
 const audioTprDearSister = document.querySelector(".audio__tpr--dear-sister");
-const audioTprFuckedUpWorld = document.querySelector(".audio__tpr--fucked-up-world");
+const audioTprFuckedUpWorld = document.querySelector(
+  ".audio__tpr--fucked-up-world"
+);
 const audioTprHeavenKnows = document.querySelector(".audio__tpr--heaven-knows");
-const audioTprHouseOnAHill = document.querySelector(".audio__tpr--house-on-a-hill");
+const audioTprHouseOnAHill = document.querySelector(
+  ".audio__tpr--house-on-a-hill"
+);
 const audioTprSweetThings = document.querySelector(".audio__tpr--sweet-things");
-const audioTprWaitingForAFriend = document.querySelector(".audio__tpr--waiting-for-a-friend");
-const audioTprWhydYouBringAShotgunToTheParty = document.querySelector(".audio__tpr--whyd-you-bring-a-shotgun-to-the-party");
+const audioTprWaitingForAFriend = document.querySelector(
+  ".audio__tpr--waiting-for-a-friend"
+);
+const audioTprWhydYouBringAShotgunToTheParty = document.querySelector(
+  ".audio__tpr--whyd-you-bring-a-shotgun-to-the-party"
+);
 
 export const titleTpr = document.querySelector(".container__title--tpr");
 

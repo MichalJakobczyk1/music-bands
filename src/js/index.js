@@ -1,6 +1,7 @@
 import "../scss/main.scss";
-import tacoPlayer from "./modules/taco";
 import tprPlayer from "./modules/thePrettyReckless";
+import tacoPlayer from "./modules/taco";
+import grandsonPlayer from "./modules/grandson";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -17,30 +18,10 @@ window.addEventListener("load", (event) => {
 
 tprPlayer();
 tacoPlayer();
+grandsonPlayer();
 
-const buttonGrandsonWwIII = document.querySelector(".container__button--wwIII");
-const audioGrandsonWwIII = document.querySelector(".audio__grandson--wwIII");
-
-const buttonAvaWhosLaughingNow = document.querySelector(
-  ".container__button--whos-laughing-now"
-);
-const audioAvaWhosLaughingNow = document.querySelector(
-  ".audio__ava--whos-laughing-now"
-);
-
-buttonGrandsonWwIII.addEventListener("click", () => {
-  if (buttonGrandsonWwIII.classList.contains("container__button-play")) {
-    audioGrandsonWwIII.play();
-    audioGrandsonWwIII.volume = 0.1;
-
-    buttonGrandsonWwIII.classList.remove("container__button-play");
-    buttonGrandsonWwIII.classList.add("container__button-pause");
-  } else {
-    audioGrandsonWwIII.pause();
-    buttonGrandsonWwIII.classList.add("container__button-play");
-    buttonGrandsonWwIII.classList.remove("container__button-pause");
-  }
-});
+const buttonAvaWhosLaughingNow = document.querySelector(".container__button--whos-laughing-now");
+const audioAvaWhosLaughingNow = document.querySelector(".audio__ava--whos-laughing-now");
 
 buttonAvaWhosLaughingNow.addEventListener("click", () => {
   if (buttonAvaWhosLaughingNow.classList.contains("container__button-play")) {

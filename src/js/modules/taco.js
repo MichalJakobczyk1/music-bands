@@ -1,24 +1,42 @@
 import { play, pause, changeContent } from "./functions";
 
-export const buttonTacoLuxembourg = document.querySelector(".container__button--luxembourg");
-const buttonRightTacoLuxembourg = document.querySelector(".section__button--right-luxembourg");
-const buttonLeftTacoLuxembourg = document.querySelector(".section__button--left-luxembourg");
+const buttonTacoLuxembourg = document.querySelector(
+  ".container__button--luxembourg"
+);
+const buttonRightTacoLuxembourg = document.querySelector(
+  ".section__button--right-luxembourg"
+);
+const buttonLeftTacoLuxembourg = document.querySelector(
+  ".section__button--left-luxembourg"
+);
 
-export const audioTacoLuxembourg = document.querySelector(".audio__taco--luxembourg");
+const audioTacoLuxembourg = document.querySelector(".audio__taco--luxembourg");
 const audioTacoGrandPrix = document.querySelector(".audio__taco--grand-prix");
 const audioTacoEuropa = document.querySelector(".audio__taco--europa");
-const audioTacoNieUfamSobieSam = document.querySelector(".audio__taco--nie-ufam-sobie-sam");
+const audioTacoNieUfamSobieSam = document.querySelector(
+  ".audio__taco--nie-ufam-sobie-sam"
+);
 const audioTacoPireneje = document.querySelector(".audio__taco--pireneje");
 const audioTacoBigPharma = document.querySelector(".audio__taco--big-pharma");
 const audioTacoSztylet = document.querySelector(".audio__taco--sztylet");
 const audioTacoOrtalion = document.querySelector(".audio__taco--ortalion");
-const audioTacoPieniadzITerror = document.querySelector(".audio__taco--pieniadz-i-terror");
-const audioTacoWwaNieBerlin = document.querySelector(".audio__taco--wwa-nie-berlin");
-const audioTacoNaParyskieGettoPadaDeszcz = document.querySelector(".audio__taco--na-paryskie-getto-pada-deszcz");
-const audioTacoMichaelEssienBirthdayParty = document.querySelector(".audio__taco--michael-essien-birthday-party");
-const audioTacoToskaniaOutro = document.querySelector(".audio__taco--toskania-outro");
+const audioTacoPieniadzITerror = document.querySelector(
+  ".audio__taco--pieniadz-i-terror"
+);
+const audioTacoWwaNieBerlin = document.querySelector(
+  ".audio__taco--wwa-nie-berlin"
+);
+const audioTacoNaParyskieGettoPadaDeszcz = document.querySelector(
+  ".audio__taco--na-paryskie-getto-pada-deszcz"
+);
+const audioTacoMichaelEssienBirthdayParty = document.querySelector(
+  ".audio__taco--michael-essien-birthday-party"
+);
+const audioTacoToskaniaOutro = document.querySelector(
+  ".audio__taco--toskania-outro"
+);
 
-export const titleTaco = document.querySelector(".container__title--taco");
+const titleTaco = document.querySelector(".container__title--taco");
 
 export default function tacoPlayer() {
   buttonRightTacoLuxembourg.addEventListener("click", () => {
@@ -56,7 +74,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoEuropa, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--nie-ufam-sobie-sam")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--nie-ufam-sobie-sam"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -111,7 +131,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoOrtalion, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--pieniadz-i-terror")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--pieniadz-i-terror"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -122,7 +144,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoPieniadzITerror, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--wwa-nie-berlin")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--wwa-nie-berlin"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -133,7 +157,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoWwaNieBerlin, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--na-paryskie-getto-pada-deszcz")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--na-paryskie-getto-pada-deszcz"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -144,7 +170,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoNaParyskieGettoPadaDeszcz, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--michael-essien-birthday-party")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--michael-essien-birthday-party"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -155,7 +183,9 @@ export default function tacoPlayer() {
       );
       pause(audioTacoMichaelEssienBirthdayParty, buttonTacoLuxembourg);
     } else if (
-      buttonTacoLuxembourg.classList.contains("container__button--toskania-outro")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--toskania-outro"
+      )
     ) {
       changeContent(
         titleTaco,
@@ -346,9 +376,7 @@ export default function tacoPlayer() {
         pause(audioTacoGrandPrix, buttonTacoLuxembourg);
       }
     }
-    if (
-      buttonTacoLuxembourg.classList.contains("container__button--europa")
-    ) {
+    if (buttonTacoLuxembourg.classList.contains("container__button--europa")) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoEuropa, buttonTacoLuxembourg);
       } else {
@@ -356,7 +384,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--nie-ufam-sobie-sam")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--nie-ufam-sobie-sam"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoNieUfamSobieSam, buttonTacoLuxembourg);
@@ -382,9 +412,7 @@ export default function tacoPlayer() {
         pause(audioTacoBigPharma, buttonTacoLuxembourg);
       }
     }
-    if (
-      buttonTacoLuxembourg.classList.contains("container__button--sztylet")
-    ) {
+    if (buttonTacoLuxembourg.classList.contains("container__button--sztylet")) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoSztylet, buttonTacoLuxembourg);
       } else {
@@ -401,7 +429,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--pieniadz-i-terror")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--pieniadz-i-terror"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoPieniadzITerror, buttonTacoLuxembourg);
@@ -410,7 +440,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--wwa-nie-berlin")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--wwa-nie-berlin"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoWwaNieBerlin, buttonTacoLuxembourg);
@@ -419,7 +451,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--na-paryskie-getto-pada-deszcz")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--na-paryskie-getto-pada-deszcz"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoNaParyskieGettoPadaDeszcz, buttonTacoLuxembourg);
@@ -428,7 +462,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--michael-essien-birthday-party")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--michael-essien-birthday-party"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoMichaelEssienBirthdayParty, buttonTacoLuxembourg);
@@ -437,7 +473,9 @@ export default function tacoPlayer() {
       }
     }
     if (
-      buttonTacoLuxembourg.classList.contains("container__button--toskania-outro")
+      buttonTacoLuxembourg.classList.contains(
+        "container__button--toskania-outro"
+      )
     ) {
       if (buttonTacoLuxembourg.classList.contains("container__button-play")) {
         play(audioTacoToskaniaOutro, buttonTacoLuxembourg);

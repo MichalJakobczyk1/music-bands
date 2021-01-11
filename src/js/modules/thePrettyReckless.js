@@ -140,7 +140,7 @@ export default function tprPlayer() {
     ) {
       changeContent(
         titleTpr,
-        "Why'd You Bring A Shotgun To The Party",
+        `Why'd You Bring A </br> Shotgun To The Party`,
         buttonTprGoingToHell,
         "container__button--waiting-for-a-friend",
         "container__button--whyd-you-bring-a-shotgun-to-the-party"
@@ -170,7 +170,7 @@ export default function tprPlayer() {
     ) {
       changeContent(
         titleTpr,
-        "Why'd You Bring A Shotgun To The Party",
+        `Why'd You Bring A </br> Shotgun To The Party`,
         buttonTprGoingToHell,
         "container__button--going-to-hell",
         "container__button--whyd-you-bring-a-shotgun-to-the-party"

@@ -4,13 +4,12 @@
   opacity: 0.5;
   -webkit-text-stroke: 1px black;
   transition: opacity 1s ease-in-out;
-  @media (min-width: $tablet) {
-    min-height: 100vh;
-  }
-  @media (max-width: $mobile)
-  {
+  @media (max-width: $tablet) {
     min-height: 100vh;
     border-bottom: 10px $themeColor solid;
+  }
+  @media (max-width: $desktop) {
+    min-height: 100vh;
   }
   &:hover {
     opacity: 1;
@@ -36,10 +35,9 @@
   &--ava {
     grid-area: ava;
     background: url("../assets/img/ava.png") center center / cover;
-    @media (max-width: $mobile)
-  {
-    border-bottom: none;
-  }
+    @media (max-width: $mobile) {
+      border-bottom: none;
+    }
   }
   &__button {
     @include button;

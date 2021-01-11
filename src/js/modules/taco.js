@@ -150,7 +150,7 @@ export default function tacoPlayer() {
     ) {
       changeContent(
         titleTaco,
-        "Na Paryskie Getto Pada Deszcz",
+       `Na Paryskie Getto </br> Pada Deszcz`,
         buttonTacoLuxembourg,
         "container__button--wwa-nie-berlin",
         "container__button--na-paryskie-getto-pada-deszcz"
@@ -163,7 +163,7 @@ export default function tacoPlayer() {
     ) {
       changeContent(
         titleTaco,
-        "Michael Essien Birthday Party",
+        `Michael Essien </br> Birthday Party`,
         buttonTacoLuxembourg,
         "container__button--na-paryskie-getto-pada-deszcz",
         "container__button--michael-essien-birthday-party"
@@ -335,7 +335,7 @@ export default function tacoPlayer() {
     ) {
       changeContent(
         titleTaco,
-        "Na Paryskie Getto Pada Deszcz",
+        `Na Paryskie Getto </br> Pada Deszcz`,
         buttonTacoLuxembourg,
         "container__button--michael-essien-birthday-party",
         "container__button--na-paryskie-getto-pada-deszcz"
@@ -348,7 +348,7 @@ export default function tacoPlayer() {
     ) {
       changeContent(
         titleTaco,
-        "Michael Essien Birthday Party",
+        `Michael Essien </br> Birthday Party`,
         buttonTacoLuxembourg,
         "container__button--toskania-outro",
         "container__button--michael-essien-birthday-party"

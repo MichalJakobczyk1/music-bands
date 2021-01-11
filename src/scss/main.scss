@@ -11,7 +11,7 @@
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
- }
+}
 
 .body {
   color: #fff;
@@ -21,14 +21,34 @@
 }
 
 .main {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: 5% 1fr 5%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header header"
-    "tpr taco grandson ava"
-    "footer footer footer footer";
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: $tablet) {
+    row-gap: 10px;
+    column-gap: 10px;
+    display: grid;
+    grid-template-rows: 5% 1fr 1fr 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "tpr taco"
+      "grandson ava"
+      "footer footer";
+  }
+  @media (min-width: $desktop) {
+    row-gap: 0px;
+    column-gap: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 5% 1fr 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "tpr taco grandson ava"
+      "footer footer footer footer";
+  }
 }
 
 .footer {

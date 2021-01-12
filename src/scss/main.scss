@@ -6,18 +6,17 @@
 @import "modules/animation.scss";
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap");
 
-.body--preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 .body {
   color: #fff;
   min-height: 100vh;
   background-color: #000;
   font-family: "Oswald", sans-serif;
+  &--preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
 }
 
 .main {
@@ -44,6 +43,24 @@
       "header header header header"
       "tpr taco grandson ava"
       "footer footer footer footer";
+  }
+  &--preload{
+    &:before {
+      animation: disappear 0.75s 2.5s ease-in-out both;
+      content: 'Hello,lets taste some music';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 128px;
+      color: #fff;
+      z-index: 1;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: $themeColor;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

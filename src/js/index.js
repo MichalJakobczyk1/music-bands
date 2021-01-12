@@ -10,6 +10,7 @@ import avaPlayer from "./modules/ava";
 
 /* place your code below */
 
+const main = document.querySelector(".main--preload");
 console.log("HELLO 🚀");
 
 window.addEventListener("load", (event) => {
@@ -17,6 +18,11 @@ window.addEventListener("load", (event) => {
   document.body.classList.remove("body--preload");
 });
 
+function remove() {
+  main.classList.remove("main--preload");
+};
+
+setTimeout(remove,4000);
 tprPlayer();
 tacoPlayer();
 grandsonPlayer();

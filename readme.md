@@ -6,4 +6,4 @@ I built up this project to do something spotify like, of course as a very minimi
 
 ## Explore,download and listen!
 
-My projects is supported by PWA so if you like the same music as me you can download it right on your phone!
+My project is supported by PWA so if you like the same music as me you can download it right on your phone!

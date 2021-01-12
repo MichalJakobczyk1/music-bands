@@ -1,0 +1,8 @@
+.footer {
+    grid-area: footer;
+    background: $themeColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }

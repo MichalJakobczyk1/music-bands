@@ -1,6 +1,6 @@
-import { play, pause, changeContent } from "./functions";
+import { play, pause, changeContent, changeContentLeft } from "./functions";
 
-export const buttonTprGoingToHell = document.querySelector(
+const buttonTprGoingToHell = document.querySelector(
   ".container__button--going-to-hell"
 );
 const buttonRightTprGoingToHell = document.querySelector(
@@ -10,7 +10,7 @@ const buttonLeftTprGoingToHell = document.querySelector(
   ".section__button--left-going-to-hell"
 );
 
-export const audioTprGoingToHell = document.querySelector(
+ const audioTprGoingToHell = document.querySelector(
   ".audio__tpr--going-to-hell"
 );
 const audioTprFollowMeDown = document.querySelector(
@@ -33,7 +33,7 @@ const audioTprWhydYouBringAShotgunToTheParty = document.querySelector(
   ".audio__tpr--whyd-you-bring-a-shotgun-to-the-party"
 );
 
-export const titleTpr = document.querySelector(".container__title--tpr");
+const titleTpr = document.querySelector(".container__title--tpr");
 
 export default function tprPlayer() {
   buttonRightTprGoingToHell.addEventListener("click", () => {
@@ -168,7 +168,7 @@ export default function tprPlayer() {
         "container__button--going-to-hell"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         `Why'd You Bring A </br> Shotgun To The Party`,
         buttonTprGoingToHell,
@@ -181,7 +181,7 @@ export default function tprPlayer() {
         "container__button--follow-me-down"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Going To Hell",
         buttonTprGoingToHell,
@@ -192,7 +192,7 @@ export default function tprPlayer() {
     } else if (
       buttonTprGoingToHell.classList.contains("container__button--absolution")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Follow Me Down",
         buttonTprGoingToHell,
@@ -203,7 +203,7 @@ export default function tprPlayer() {
     } else if (
       buttonTprGoingToHell.classList.contains("container__button--dear-sister")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Absolution",
         buttonTprGoingToHell,
@@ -216,7 +216,7 @@ export default function tprPlayer() {
         "container__button--fucked-up-world"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Dear Sister",
         buttonTprGoingToHell,
@@ -227,7 +227,7 @@ export default function tprPlayer() {
     } else if (
       buttonTprGoingToHell.classList.contains("container__button--heaven-knows")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Fucked Up World",
         buttonTprGoingToHell,
@@ -240,7 +240,7 @@ export default function tprPlayer() {
         "container__button--house-on-a-hill"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Heaven Knows",
         buttonTprGoingToHell,
@@ -251,7 +251,7 @@ export default function tprPlayer() {
     } else if (
       buttonTprGoingToHell.classList.contains("container__button--sweet-things")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "House On A Hill",
         buttonTprGoingToHell,
@@ -264,7 +264,7 @@ export default function tprPlayer() {
         "container__button--waiting-for-a-friend"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Sweet Things",
         buttonTprGoingToHell,
@@ -277,7 +277,7 @@ export default function tprPlayer() {
         "container__button--whyd-you-bring-a-shotgun-to-the-party"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTpr,
         "Waiting For A Friend",
         buttonTprGoingToHell,

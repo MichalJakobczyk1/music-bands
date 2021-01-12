@@ -1,4 +1,4 @@
-import { play, pause, changeContent } from "./functions";
+import { play, pause, changeContent, changeContentLeft  } from "./functions";
 
 const buttonTacoLuxembourg = document.querySelector(
   ".container__button--luxembourg"
@@ -202,7 +202,7 @@ export default function tacoPlayer() {
     if (
       buttonTacoLuxembourg.classList.contains("container__button--luxembourg")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Toskania Outro",
         buttonTacoLuxembourg,
@@ -213,7 +213,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--grand-prix")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Luxembourg",
         buttonTacoLuxembourg,
@@ -224,7 +224,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--europa")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Grand Prix",
         buttonTacoLuxembourg,
@@ -237,7 +237,7 @@ export default function tacoPlayer() {
         "container__button--nie-ufam-sobie-sam"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Europa",
         buttonTacoLuxembourg,
@@ -248,7 +248,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--pireneje")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Nie Ufam Sobie Sam",
         buttonTacoLuxembourg,
@@ -259,7 +259,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--big-pharma")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Pireneje",
         buttonTacoLuxembourg,
@@ -270,7 +270,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--sztylet")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Big Pharma",
         buttonTacoLuxembourg,
@@ -281,7 +281,7 @@ export default function tacoPlayer() {
     } else if (
       buttonTacoLuxembourg.classList.contains("container__button--ortalion")
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Sztylet",
         buttonTacoLuxembourg,
@@ -294,7 +294,7 @@ export default function tacoPlayer() {
         "container__button--pieniadz-i-terror"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Ortalion",
         buttonTacoLuxembourg,
@@ -307,7 +307,7 @@ export default function tacoPlayer() {
         "container__button--wwa-nie-berlin"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "Pieniądze i Terror",
         buttonTacoLuxembourg,
@@ -320,7 +320,7 @@ export default function tacoPlayer() {
         "container__button--na-paryskie-getto-pada-deszcz"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         "WWA Nie Berlin",
         buttonTacoLuxembourg,
@@ -333,7 +333,7 @@ export default function tacoPlayer() {
         "container__button--michael-essien-birthday-party"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         `Na Paryskie Getto </br> Pada Deszcz`,
         buttonTacoLuxembourg,
@@ -346,7 +346,7 @@ export default function tacoPlayer() {
         "container__button--toskania-outro"
       )
     ) {
-      changeContent(
+      changeContentLeft(
         titleTaco,
         `Michael Essien </br> Birthday Party`,
         buttonTacoLuxembourg,

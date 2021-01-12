@@ -3,8 +3,8 @@
 @import "modules/section.scss";
 @import "modules/styleReset.scss";
 @import "modules/header.scss";
-@import "modules/animation.scss";
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap");
+@import "modules/footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
 
 .body {
   color: #fff;
@@ -47,7 +47,7 @@
   &--preload{
     &:before {
       animation: disappear 0.75s 2.5s ease-in-out both;
-      content: 'Hello,lets taste some music';
+      content: 'Hello, lets taste some music';
       display: flex;
       justify-content: center;
       align-items: center;
@@ -60,14 +60,18 @@
       background-color: $themeColor;
       width: 100%;
       height: 100%;
+      @media (max-width: $mobile) {
+       font-size: 64px;
+       text-align: center;
+       content: 'Hello \A lets \A taste \A some \A music';
+       white-space: pre;
+      }
+      @media (min-width: $tablet) {
+        font-size: 96px;
+        content: 'Hello, lets \A taste some music';
+        text-align: center;
+        white-space: pre;
+       }
     }
   }
-}
-
-.footer {
-  grid-area: footer;
-  background: $themeColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

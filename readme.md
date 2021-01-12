@@ -1,18 +1,9 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://michaljakobczyk1.github.io/music-bands/cover.png)
 
-# WTF Webpack Starter Kit 
+# My Favourite Music Bands
 
-Simple toolkit for your static websites development.
+I built up this project to do something spotify like, of course as a very minimized version, but my main goal was to try js carousel on my own and work with my favourite music in the background.
 
-## How to use it?
+## Explore,download and listen!
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+My projects is supported by PWA so if you like the same music as me you can download it right on your phone!

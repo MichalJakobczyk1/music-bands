@@ -21,4 +21,23 @@ export function changeContent(
   sectionTitle.innerHTML = title;
   button.classList.remove(classRemove);
   button.classList.add(classAdd);
+  sectionTitle.classList.add("container__title--animation-left");
+  setTimeout(function () {
+    sectionTitle.classList.remove("container__title--animation-left");
+  },750);
+}
+export function changeContentLeft(
+  sectionTitle,
+  title,
+  button,
+  classRemove,
+  classAdd
+) {
+  sectionTitle.innerHTML = title;
+  button.classList.remove(classRemove);
+  button.classList.add(classAdd);
+  sectionTitle.classList.add("container__title--animation-right");
+  setTimeout(function () {
+    sectionTitle.classList.remove("container__title--animation-right");
+  },750);
 }

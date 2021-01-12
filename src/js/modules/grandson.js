@@ -1,4 +1,4 @@
-import { play, pause, changeContent } from "./functions";
+import { play, pause, changeContent, changeContentLeft } from "./functions";
 
 const buttonGrandsonWwIII = document.querySelector(".container__button--wwIII");
 const buttonRightGrandsonWwIII = document.querySelector(
@@ -184,7 +184,7 @@ export default function grandsonPlayer() {
     if (
       buttonGrandsonWwIII.classList.contains("container__button--wwIII")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Welcome To Paradise",
         buttonGrandsonWwIII,
@@ -195,7 +195,7 @@ export default function grandsonPlayer() {
     } else if (
       buttonGrandsonWwIII.classList.contains("container__button--death-of-an-optimist")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "WW III",
         buttonGrandsonWwIII,
@@ -206,7 +206,7 @@ export default function grandsonPlayer() {
     } else if (
       buttonGrandsonWwIII.classList.contains("container__button--drop-dead")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Death Of An Optimist",
         buttonGrandsonWwIII,
@@ -218,7 +218,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--identity")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Drop Dead",
         buttonGrandsonWwIII,
@@ -230,7 +230,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--in-over-my-head")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Identity",
         buttonGrandsonWwIII,
@@ -242,7 +242,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--left-behind")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "In Over My Head",
         buttonGrandsonWwIII,
@@ -254,7 +254,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--pain-shopping")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Left Behind",
         buttonGrandsonWwIII,
@@ -266,7 +266,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--riptide")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Pain Shopping",
         buttonGrandsonWwIII,
@@ -278,7 +278,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--the-ballad-of-g-and-x")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "Riptide",
         buttonGrandsonWwIII,
@@ -290,7 +290,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--we-did-it")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "The Ballad Of G&X",
         buttonGrandsonWwIII,
@@ -302,7 +302,7 @@ export default function grandsonPlayer() {
     else if (
       buttonGrandsonWwIII.classList.contains("container__button--welcome-to-paradise")
     ) {
-      changeContent(
+      changeContentLeft(
         titleGrandson,
         "We Did It",
         buttonGrandsonWwIII,

@@ -3,8 +3,9 @@
   display: flex;
   align-items: center;
   opacity: 0.5;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 2px black;
   transition: opacity 1s ease-in-out;
+  overflow: hidden;
   @media (max-width: $tablet) {
     min-height: 100vh;
     border-bottom: 10px $themeColor solid;
@@ -73,8 +74,15 @@
     background: url("../assets/img/pause.svg") no-repeat;
   }
   &__title {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: 600;
     text-align: center;
+    &--animation-left {
+      animation: leftAppear 0.75s ease-in-out both, appear 0.5s 0.4s ease-in-out both;
+    }
+    &--animation-right {
+      animation: rightAppear 0.75s ease-in-out both, appear 0.5s 0.4s ease-in-out both;
+    }
   }
   &--tpr {
     opacity: 0;

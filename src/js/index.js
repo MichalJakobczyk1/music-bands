@@ -3,12 +3,9 @@ import tprPlayer from "./modules/thePrettyReckless";
 import tacoPlayer from "./modules/taco";
 import grandsonPlayer from "./modules/grandson";
 import avaPlayer from "./modules/ava";
+import {registerSW} from './pwa.js';
 
-// uncomment the lines below to enable PWA
-// import {registerSW} from './pwa.js';
-// registerSW();
-
-/* place your code below */
+registerSW();
 
 const main = document.querySelector(".main--preload");
 console.log("HELLO 🚀");

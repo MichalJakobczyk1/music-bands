@@ -1,4 +1,4 @@
-import { play, pause, changeContent } from "./functions";
+import { play, pause, changeContent, changeContentLeft } from "./functions";
 
 const buttonAvaWhosLaughingNow = document.querySelector(
   ".container__button--whos-laughing-now"
@@ -172,7 +172,7 @@ export default function avaPlayer() {
         if (
           buttonAvaWhosLaughingNow.classList.contains("container__button--whos-laughing-now")
         ) {
-          changeContent(
+          changeContentLeft(
             titleAva,
             "Torn",
             buttonAvaWhosLaughingNow,
@@ -183,7 +183,7 @@ export default function avaPlayer() {
         } else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--belladonna")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Who's Laughing Now",
               buttonAvaWhosLaughingNow,
@@ -194,7 +194,7 @@ export default function avaPlayer() {
           } else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--kings-queens")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Belladonna",
               buttonAvaWhosLaughingNow,
@@ -206,7 +206,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--naked")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "King's&Queens",
               buttonAvaWhosLaughingNow,
@@ -218,7 +218,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--omg-whats-happening")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Naked",
               buttonAvaWhosLaughingNow,
@@ -230,7 +230,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--salt")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "OMG What's Happening",
               buttonAvaWhosLaughingNow,
@@ -242,7 +242,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--so-am-i")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Salt",
               buttonAvaWhosLaughingNow,
@@ -254,7 +254,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--sweet-but-psycho")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "So Am I",
               buttonAvaWhosLaughingNow,
@@ -266,7 +266,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--take-you-to-hell")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Sweet But Psycho",
               buttonAvaWhosLaughingNow,
@@ -278,7 +278,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--tattoo")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Take You To Hell",
               buttonAvaWhosLaughingNow,
@@ -290,7 +290,7 @@ export default function avaPlayer() {
           else if (
             buttonAvaWhosLaughingNow.classList.contains("container__button--torn")
           ) {
-            changeContent(
+            changeContentLeft(
               titleAva,
               "Tattoo",
               buttonAvaWhosLaughingNow,

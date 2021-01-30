@@ -1,12 +1,12 @@
 {
-  "name": "WTF: PWA",
-  "short_name": "WTF: PWA",
-  "theme_color": "#2D2241",
-  "background_color": "#2D2241",
+  "name": "My Favourite Music Bands",
+  "short_name": "My Favourite Music Bands",
+  "theme_color": "#000",
+  "background_color": "#fff",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/wtf-webpack-starter/",
-  "start_url": "/wtf-webpack-starter/",
+  "scope": "/music-bands/",
+  "start_url": "/music-bands/",
   "icons": [
     {
       "src": "pwa/manifest-icon-192.png",
